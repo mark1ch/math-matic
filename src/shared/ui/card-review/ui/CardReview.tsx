@@ -28,7 +28,7 @@ export function UICardReview({ review }: { review: number }) {
     <>
       <div className={cn(styles.card)} onClick={handleOpenModal}>
         <img
-          src={`src/shared/assets/reviews/${review}.jpg`}
+          src={`assets/reviews/${review}.jpg`}
           alt={`reviews${review}`}
           ref={refImg}
           onLoad={onLoadImage}
@@ -36,10 +36,7 @@ export function UICardReview({ review }: { review: number }) {
         {bigImg && <div className={cn({ [styles.card__big]: bigImg })}></div>}
       </div>
       <UIModal show={showModal} closeModal={handleCloseModal}>
-        <img
-          src={`src/shared/assets/reviews/${review}.jpg`}
-          alt={`reviews${review}`}
-        />
+        <img src={`assets/reviews/${review}.jpg`} alt={`reviews${review}`} />
       </UIModal>
     </>
   );

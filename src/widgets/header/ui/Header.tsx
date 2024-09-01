@@ -10,22 +10,22 @@ export function Header() {
       <div className={cn(styles.header__buttons)}>
         <UIButton>
           <a href="https://vk.com/romanpromatan">
-            <img src="src/shared/assets/icon/icon-vk.svg" alt="link_vk" />
+            <img src="assets/icon/icon-vk.svg" alt="link_vk" />
           </a>
         </UIButton>
         <UIButton>
           <a href="https://t.me/nazaroved">
-            <img src="src/shared/assets/icon/icon-tg.svg" alt="link_tg" />
+            <img src="assets/icon/icon-tg.svg" alt="link_tg" />
           </a>
         </UIButton>
         <UIButton cls={styles.btn_inst}>
           <a href="">
-            <img src="src/shared/assets/icon/icon-inst.svg" alt="link_inst" />
+            <img src="assets/icon/icon-inst.svg" alt="link_inst" />
           </a>
         </UIButton>
       </div>
       <UIButton cls={styles.btn_menu}>
-        <img src="src/shared/assets/icon/icon-menu.svg" alt="btn_menu" />
+        <img src="assets/icon/icon-menu.svg" alt="btn_menu" />
       </UIButton>
     </header>
   );

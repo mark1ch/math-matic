@@ -49,19 +49,19 @@ export function About() {
         <div className={styles.about__content__images}>
           <div className={styles.about__content__images_1}>
             <div onClick={handleShowOpenImg1}>
-              <img src="src/shared/assets/about-me/photo-1.jpg" alt="photo_1" />
+              <img src="assets/about-me/photo-1.jpg" alt="photo_1" />
             </div>
           </div>
           <UIModal show={isShowImg1} closeModal={handleShowCloseImg1}>
-            <img src="src/shared/assets/about-me/photo-1.jpg" alt="photo_1" />
+            <img src="assets/about-me/photo-1.jpg" alt="photo_1" />
           </UIModal>
           <div className={styles.about__content__images_2}>
             <div onClick={handleShowOpenImg2}>
-              <img src="src/shared/assets/about-me/photo-2.jpg" alt="photo_2" />
+              <img src="assets/about-me/photo-2.jpg" alt="photo_2" />
             </div>
           </div>
           <UIModal show={isShowImg2} closeModal={handleShowCloseImg2}>
-            <img src="src/shared/assets/about-me/photo-2.jpg" alt="photo_2" />
+            <img src="assets/about-me/photo-2.jpg" alt="photo_2" />
           </UIModal>
         </div>
       </div>

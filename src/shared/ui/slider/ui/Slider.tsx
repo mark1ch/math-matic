@@ -18,19 +18,13 @@ export function UISlider({ img }: UISliderProps) {
   return (
     <div className={styles.slider}>
       <button className={styles.slider__arrow_left} onClick={changeLeftImg}>
-        <img
-          src="src/shared/assets/icon/icon-caret-down.svg"
-          alt="arrow-left"
-        />
+        <img src="assets/icon/icon-caret-down.svg" alt="arrow-left" />
       </button>
       <div>
         <img src={img[numImg]} alt="photo" />
       </div>
       <button className={styles.slider__arrow_right} onClick={changeRightImg}>
-        <img
-          src="src/shared/assets/icon/icon-caret-down.svg"
-          alt="arrow-right"
-        />
+        <img src="assets/icon/icon-caret-down.svg" alt="arrow-right" />
       </button>
     </div>
   );

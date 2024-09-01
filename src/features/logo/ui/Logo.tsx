@@ -4,12 +4,12 @@ import { UIModal, UISlider } from "shared/ui";
 import { useState } from "react";
 
 const album = [
-  "src/shared/assets/slider-nav/1.jpg",
-  "src/shared/assets/slider-nav/2.jpg",
-  "src/shared/assets/slider-nav/3.jpg",
-  "src/shared/assets/slider-nav/4.jpg",
-  "src/shared/assets/slider-nav/5.jpg",
-  "src/shared/assets/slider-nav/6.jpg",
+  "assets/slider-nav/1.jpg",
+  "assets/slider-nav/2.jpg",
+  "assets/slider-nav/3.jpg",
+  "assets/slider-nav/4.jpg",
+  "assets/slider-nav/5.jpg",
+  "assets/slider-nav/6.jpg",
 ];
 
 export function Logo() {
@@ -27,7 +27,7 @@ export function Logo() {
   return (
     <>
       <button className={cn(styles.logo)} onClick={handleShowOpen}>
-        <img src="src/shared/assets/logo.jpg" alt="Logo" />
+        <img src="assets/logo.jpg" alt="Logo" />
       </button>
       <UIModal show={isShow} closeModal={handleShowClose} slider>
         <UISlider img={album} />
