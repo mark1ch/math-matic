@@ -1,0 +1,25 @@
+.slider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .slider__arrow_left, .slider__arrow_right {
+    padding: 40px 10px;
+    border-radius: 5px;
+
+    &:hover, &:active {
+      background-color: rgba(0, 0, 0, 0.123);
+    }
+
+    img {
+      transform: rotate(90deg);
+      width: 30px;
+    }
+  }
+
+  .slider__arrow_right {
+    img {
+      transform: rotate(-90deg);
+    }
+  }
+}

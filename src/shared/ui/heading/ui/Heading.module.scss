@@ -1,0 +1,52 @@
+.heading {
+  text-transform: uppercase;
+  gap: 20px;
+
+  .heading__head {
+    height: 100%;
+    position: relative;
+    top: -45px;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    gap: 15px;
+    width: 20%;
+    color: gray;
+    font-family: "Nunito", sans-serif;
+    margin-right: 30px;
+  }
+
+  .heading__title {
+    display: inline;
+    font-size: 4.5rem;
+    font-family: "Oswald", sans-serif;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .heading {
+    .heading__head {
+      font-size: .9rem;
+    }
+
+    .heading__title {
+      font-size: 3rem;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .heading {
+    .heading__head {
+      font-size: .8rem;
+    }
+
+    .heading__title {
+      font-size: 2.7rem;
+      display: block;
+    }
+  }
+}

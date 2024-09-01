@@ -1,0 +1,122 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
+.reviews {
+  margin-bottom: 100px;
+}
+
+.reviews__head {
+  margin-bottom: 50px;
+
+  & > span {
+    top: -100px !important;
+  }
+
+  p {
+    font-size: 9rem !important;
+  }
+}
+
+.reviews__slider {
+  display: flex;
+  justify-content: center;
+
+  & > div {
+    & > div {
+      overflow: visible !important;
+
+      & > ul {
+        bottom: -55px !important;
+
+        li {
+          background: #8c8c8c !important;
+        }
+      }
+
+      & > :nth-child(2) {
+        background: #b9b9b9 !important;
+        border-radius: 4px;
+      }
+
+      & > :nth-child(4) {
+        background: #b9b9b9 !important;
+        border-radius: 4px;
+      }
+
+      & > div {
+        width: 90% !important;
+
+        & > ul {
+          li {
+            padding: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 1018px) {
+  .reviews__head {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    span {
+      top: auto !important;
+      height: auto !important;
+    }
+  }
+}
+
+@media(max-width: 793px) {
+  .reviews__head {
+    p {
+      font-size: 7rem !important;
+    }
+  }
+}
+
+@media(max-width: 623px) {
+  .reviews__head {
+    p {
+      font-size: 6rem !important;
+    }
+  }
+}
+
+@media(max-width: 509px) {
+  .reviews__head {
+    p {
+      font-size: 5rem !important;
+    }
+  }
+}
+
+@media(max-width: 433px) {
+  .reviews__head {
+    p {
+      font-size: 5rem !important;
+    }
+  }
+}
+
+@media(max-width: 426px) {
+  .reviews__slider {
+    & > div {
+      & > div {
+        & > :nth-child(2) {
+          height: 50%;
+          left: -10px !important;
+          top: 30px !important;
+        }
+
+        & > :nth-child(4) {
+          height: 50%;
+          right: -10px !important;
+          top: 30px !important;
+        }
+      }
+    }
+  }
+}
