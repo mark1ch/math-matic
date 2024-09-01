@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { useEffect, useState } from "react";
 
-const arrReviews = [1, 2, 3, 4, 5];
+const arrReviews = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
 
 export function Reviews() {
   const [viewPort, setViewport] = useState(1920);
