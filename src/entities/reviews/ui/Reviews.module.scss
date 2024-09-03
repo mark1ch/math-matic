@@ -17,10 +17,12 @@
 }
 
 .reviews__slider {
+  width: 100%;
   display: flex;
   justify-content: center;
 
   & > div {
+    width: 100%;
     & > div {
       overflow: visible !important;
 
@@ -77,6 +79,26 @@
   }
 }
 
+@media(max-width: 768px) {
+  .reviews__slider {
+    & > div {
+      & > div {
+        & > :nth-child(2) {
+          height: 50%;
+          left: -10px !important;
+          top: 70px !important;
+        }
+
+        & > :nth-child(4) {
+          height: 50%;
+          right: -10px !important;
+          top: 70px !important;
+        }
+      }
+    }
+  }
+}
+
 @media(max-width: 623px) {
   .reviews__head {
     p {
@@ -93,10 +115,11 @@
   }
 }
 
-@media(max-width: 433px) {
+@media(max-width: 447px) {
   .reviews__head {
     p {
-      font-size: 5rem !important;
+      font-size: 4rem !important;
+      white-space: nowrap;
     }
   }
 }
@@ -117,6 +140,14 @@
           top: 30px !important;
         }
       }
+    }
+  }
+}
+
+@media(max-width: 360px) {
+  .reviews__head {
+    p {
+      font-size: 3.5rem !important;
     }
   }
 }
