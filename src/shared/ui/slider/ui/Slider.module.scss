@@ -1,10 +1,10 @@
 .slider {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 
   .slider__arrow_left, .slider__arrow_right {
-    padding: 40px 10px;
+    padding: 40px 5px;
     border-radius: 5px;
 
     &:hover, &:active {
@@ -20,6 +20,50 @@
   .slider__arrow_right {
     img {
       transform: rotate(-90deg);
+    }
+  }
+
+  & > div {
+    font-size: 0;
+  }
+}
+
+@media (max-height: 700px) {
+  .slider {
+    gap: 5px;
+
+    .slider__arrow_left, .slider__arrow_right {
+      padding: 40px 5px;
+    }
+  }
+}
+
+@media (max-width: 561px){
+  .slider {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 500px){
+  .slider {
+    gap: 0px;
+    position: relative;
+
+    .slider__arrow_left, .slider__arrow_right {
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.194);
+
+      &:hover, &:active {
+        background-color: rgba(255, 255, 255, 0.149);
+      }
+    }
+
+    .slider__arrow_left {
+      left: 10px;
+    }
+
+    .slider__arrow_right {
+      right: 10px;
     }
   }
 }
