@@ -33,7 +33,7 @@ export function Reviews() {
   window.addEventListener("resize", handleResize);
 
   return (
-    <section className={styles.reviews}>
+    <section className={styles.reviews} data-anchor="section-reviews">
       <UIHeading
         head="отзывы"
         number={4}

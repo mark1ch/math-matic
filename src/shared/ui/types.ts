@@ -1,8 +1,9 @@
-import type { ReactNode } from "react";
+import type { ReactNode, MouseEvent } from "react";
 
 export interface UIButtonProps {
   children: ReactNode;
   cls?: string;
+  onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
 }
 
 export interface UIModalProps {

@@ -3,7 +3,7 @@ import styles from "./Facts.module.scss";
 
 export function Facts() {
   return (
-    <section className={styles.facts}>
+    <section className={styles.facts} data-anchor="section-facts">
       <UIHeading
         title="РЕПЕТИТОРСТВО СТАЛО НЕОТЪЕМЛЕМОЙ ЧАСТЬЮ МОЕЙ ЖИЗНИ 5 ЛЕТ НАЗАД. ЗА ЭТО ВРЕМЯ Я ВЫПУСТИЛ БОЛЬШОЕ КОЛИЧЕСТВО УЧЕНИКОВ"
         head="НЕМНОГО ФАКТОВ"

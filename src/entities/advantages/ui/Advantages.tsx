@@ -4,7 +4,7 @@ import { advantagesData } from "../lib";
 
 export function Advantages() {
   return (
-    <section className={styles.advantages}>
+    <section className={styles.advantages} data-anchor="section-advantages">
       <UIHeading
         head="ПРЕИМУЩЕСТВА"
         number={2}

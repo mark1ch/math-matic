@@ -25,7 +25,7 @@ export function About() {
   };
 
   return (
-    <section className={styles.about}>
+    <section className={styles.about} data-anchor="section-about">
       <div className={styles.about__content}>
         <UIHeading
           head="о себе"

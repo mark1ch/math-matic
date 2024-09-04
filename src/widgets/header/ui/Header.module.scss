@@ -1,4 +1,4 @@
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,16 +11,44 @@
 }
 
 .btn_inst {
-
-  img{
+  img {
     width: 130% !important;
   }
 }
 
+.btn_menu {
+  position: relative;
+
+  img {
+    transition: all 0.6s ease 0.9s;
+  }
+
+  .btn_burger_hidden {
+    opacity: 0;
+    transition: 1s;
+  }
+
+  .btn_menu_close_hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease 0.5s;
+  }
+
+  .btn_menu_close_show {
+    opacity: 1;
+    transition: all 0.6s ease 0.8s;
+    z-index: 5;
+  }
+}
+
+
 @media (max-width: 780px) {
-  .header{
+  .header {
     .header__buttons {
-      display: none
+      display: none;
     }
   }
 }
