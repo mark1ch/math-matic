@@ -24,14 +24,12 @@ export function Reviews() {
 
   const handleResize = debounce(() => {
     const width = window.innerWidth;
-    console.log(`Ширина окна: ${width}px`);
     if (width <= 468) {
       setViewport(468);
     }
   }, 500);
 
   window.addEventListener("resize", handleResize);
-
   return (
     <section className={styles.reviews} data-anchor="section-reviews">
       <UIHeading
@@ -45,7 +43,6 @@ export function Reviews() {
           <Carousel
             centerMode
             centerSlidePercentage={25}
-            // infiniteLoop
             showStatus={false}
             swipeScrollTolerance={30}
             showThumbs={false}
@@ -61,7 +58,6 @@ export function Reviews() {
           <Carousel
             centerMode
             centerSlidePercentage={50}
-            // infiniteLoop
             showStatus={false}
             swipeScrollTolerance={30}
             showThumbs={false}
@@ -77,7 +73,6 @@ export function Reviews() {
           <Carousel
             centerMode
             centerSlidePercentage={75}
-            // infiniteLoop
             showStatus={false}
             swipeScrollTolerance={30}
             showThumbs={false}
@@ -89,11 +84,10 @@ export function Reviews() {
         </div>
       )}
       {viewPort <= 768 && (
-        <div className={styles.reviews__slider}>
+        <div className={styles.reviews__slider_mobile}>
           <Carousel
             centerMode
             centerSlidePercentage={100}
-            // infiniteLoop
             showStatus={false}
             swipeScrollTolerance={30}
             showThumbs={false}

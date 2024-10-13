@@ -49,19 +49,43 @@ export function About() {
         <div className={styles.about__content__images}>
           <div className={styles.about__content__images_1}>
             <div onClick={handleShowOpenImg1}>
-              <img src="assets/about-me/photo-1.jpg" alt="photo_1" />
+              <picture>
+                <source
+                  srcSet="assets/about-me/photo-1-480.jpg 480w, assets/about-me/photo-1-780.jpg 960w, assets/about-me/photo-1-1080.jpg 1920w"
+                  sizes="(max-width: 600px) 480px, (max-width: 1200px) 960px, 100vw"
+                />
+                <img src="assets/about-me/pc/photo-1.jpg" alt="photo_1" />
+              </picture>
             </div>
           </div>
           <UIModal show={isShowImg1} closeModal={handleShowCloseImg1}>
-            <img src="assets/about-me/photo-1.jpg" alt="photo_1" />
+            <picture>
+              <source
+                srcSet="assets/about-me/photo-1-480.jpg 480w, assets/about-me/photo-1-780.jpg 960w, assets/about-me/photo-1-1080.jpg 1920w"
+                sizes="(max-width: 600px) 480px, (max-width: 1200px) 960px, 100vw"
+              />
+              <img src="assets/about-me/pc/photo-1.jpg" alt="photo_1" />
+            </picture>
           </UIModal>
           <div className={styles.about__content__images_2}>
             <div onClick={handleShowOpenImg2}>
-              <img src="assets/about-me/photo-2.jpg" alt="photo_2" />
+              <picture>
+                <source
+                  srcSet="assets/about-me/photo-2-480.jpg 480w, assets/about-me/photo-2-780.jpg 960w, assets/about-me/photo-2-1080.jpg 1920w"
+                  sizes="(max-width: 600px) 480px, (max-width: 1200px) 960px, 100vw"
+                />
+                <img src="assets/about-me/pc/photo-2.jpg" alt="photo_2" />
+              </picture>
             </div>
           </div>
           <UIModal show={isShowImg2} closeModal={handleShowCloseImg2}>
-            <img src="assets/about-me/photo-2.jpg" alt="photo_2" />
+            <picture>
+              <source
+                srcSet="assets/about-me/photo-2-480.jpg 480w, assets/about-me/photo-2-780.jpg 960w, assets/about-me/photo-2-1080.jpg 1920w"
+                sizes="(max-width: 600px) 480px, (max-width: 1200px) 960px, 100vw"
+              />
+              <img src="assets/about-me/pc/photo-2.jpg" alt="photo_2" />
+            </picture>
           </UIModal>
         </div>
       </div>

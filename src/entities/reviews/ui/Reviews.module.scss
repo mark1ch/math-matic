@@ -1,5 +1,3 @@
-@import "react-alice-carousel/lib/scss/alice-carousel.scss";
-
 .reviews {
   margin-bottom: 100px;
 }
@@ -58,7 +56,21 @@
   }
 }
 
-@media(max-width: 1018px) {
+.reviews__slider_mobile {
+  & > div {
+    & > div {
+      overflow: visible !important;
+      & > ul {
+        bottom: -55px !important;
+        li {
+          background: #8c8c8c !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1018px) {
   .reviews__head {
     display: flex;
     flex-direction: column;
@@ -71,7 +83,7 @@
   }
 }
 
-@media(max-width: 793px) {
+@media (max-width: 793px) {
   .reviews__head {
     p {
       font-size: 7rem !important;
@@ -79,7 +91,7 @@
   }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .reviews__slider {
     & > div {
       & > div {
@@ -99,7 +111,7 @@
   }
 }
 
-@media(max-width: 623px) {
+@media (max-width: 623px) {
   .reviews__head {
     p {
       font-size: 6rem !important;
@@ -107,7 +119,7 @@
   }
 }
 
-@media(max-width: 509px) {
+@media (max-width: 509px) {
   .reviews__head {
     p {
       font-size: 5rem !important;
@@ -115,7 +127,7 @@
   }
 }
 
-@media(max-width: 447px) {
+@media (max-width: 447px) {
   .reviews__head {
     p {
       font-size: 4rem !important;
@@ -124,27 +136,7 @@
   }
 }
 
-@media(max-width: 426px) {
-  .reviews__slider {
-    & > div {
-      & > div {
-        & > :nth-child(2) {
-          height: 50%;
-          left: -10px !important;
-          top: 30px !important;
-        }
-
-        & > :nth-child(4) {
-          height: 50%;
-          right: -10px !important;
-          top: 30px !important;
-        }
-      }
-    }
-  }
-}
-
-@media(max-width: 360px) {
+@media (max-width: 360px) {
   .reviews__head {
     p {
       font-size: 3.5rem !important;

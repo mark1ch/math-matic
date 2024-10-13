@@ -21,7 +21,13 @@ export function UISlider({ img }: UISliderProps) {
         <img src="assets/icon/icon-caret-down.svg" alt="arrow-left" />
       </button>
       <div>
-        <img src={img[numImg]} alt="photo" />
+        <picture>
+          <source
+            srcSet={`assets/slider-nav/${img[numImg]}-480.jpg 480w, assets/slider-nav/${img[numImg]}-780.jpg 960w, assets/slider-nav/${img[numImg]}-1080.jpg 1920w`}
+            sizes="(max-width: 600px) 480px, (max-width: 1200px) 960px, 100vw"
+          />
+          <img src="assets/slider-nav/2.jpg" alt="photo" />
+        </picture>
       </div>
       <button className={styles.slider__arrow_right} onClick={changeRightImg}>
         <img src="assets/icon/icon-caret-down.svg" alt="arrow-right" />
