@@ -28,6 +28,7 @@ export function Logo() {
             centerMode
             centerSlidePercentage={100}
             showStatus={false}
+            infiniteLoop={true}
             swipeScrollTolerance={30}
             showThumbs={false}
           >
